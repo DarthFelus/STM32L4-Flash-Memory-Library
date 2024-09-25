@@ -85,58 +85,58 @@
    ```
    Erases the specified flash memory page.
 
-    - **Parameters**
+- **Parameters**
         *PageAddress*: The starting address of the flash page to erase.
-    - **Returns**
+- **Returns**
         *HAL_OK* on success, or an error code.
-	2. **FlashWrite
+   2. **FlashWrite
 	```c 
 	HAL_StatusTypeDef FlashWrite(uint32_t Address, uint32_t Data);
-    ```
+  ```
     Writes a 64-bit double word to the specified flash memory address.
 	
-	- **Parameters**
-		*Address*: The flash memory address where data will be written. Must be double-word aligned.
-		*Data*: The 64-bit data to write.
-    -**Returns**
-		*HAL_OK* on success, or an error code.
+- **Parameters**
+	*Address*: The flash memory address where data will be written. Must be double-word aligned.
+	*Data*: The 64-bit data to write.
+-**Returns**
+	*HAL_OK* on success, or an error code.
 		
-	3. **FlashRead
+   3. **FlashRead
 	```c 
 	uint64_t FlashRead(uint32_t Address);
     ```	
     Reads a 64-bit double word from the specified flash memory address.
 	
-	- **Parameters**
-		*Address*: The flash memory address to read from. Must be double-word aligned.
-	- **Returns**
-		The 64-bit data read from flash memory.
+- **Parameters**
+	*Address*: The flash memory address to read from. Must be double-word aligned.
+- **Returns**
+	The 64-bit data read from flash memory.
 		
    ## Important Notes
-	- The library internally handles the **unlocking and locking of flash memory.**
-    - Ensure that the addresses used are correct and aligned as required by the **STM32 flash memory specifications.**
-    - Ensure the flash memory region you're accessing is not **write-protected.**
-    - Always verify the written data by reading it back.
-	- Be cautious when performing erase operations to avoid unintentional **data loss.**
-    - Avoid flash operations while executing code from flash memory to prevent **unexpected behavior.**
+- The library internally handles the **unlocking and locking of flash memory.**
+- Ensure that the addresses used are correct and aligned as required by the **STM32 flash memory specifications.**
+- Ensure the flash memory region you're accessing is not **write-protected.**
+- Always verify the written data by reading it back.
+- Be cautious when performing erase operations to avoid unintentional **data loss.**
+- Avoid flash operations while executing code from flash memory to prevent **unexpected behavior.**
 
-	## Files Description
+   ## Files Description
 
-    **Flash.h**: Header file containing function prototypes and necessary includes.
-    **Flash.c**: Source file with the implementation of flash operations.
-    **FlashAdresses.h**: Header file defining flash page addresses based on the STM32L4 microcontrollers memory size.
+ **Flash.h**: Header file containing function prototypes and necessary includes.
+ **Flash.c**: Source file with the implementation of flash operations.
+ **FlashAdresses.h**: Header file defining flash page addresses based on the STM32L4 microcontrollers memory size.
 
-	## Version History
+   ## Version History
 
-    v1.0.0 (29.07.2024)
-        Initial release
+  v1.0.0 (29.07.2024)
+     Initial release
 
-	## License
+   ## License
+   
+   This project is licensed under the MIT License. See the LICENSE file for details.
 
-	This project is licensed under the MIT License. See the LICENSE file for details.
+   ## Contributing
 
-	## Contributing
-
-	Feel free to contribute by opening issues or submitting pull requests.
+   Feel free to contribute by opening issues or submitting pull requests.
 	
 	
