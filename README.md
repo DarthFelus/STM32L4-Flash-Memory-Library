@@ -89,7 +89,7 @@
         *PageAddress*: The starting address of the flash page to erase.
 - **Returns**
         *HAL_OK* on success, or an error code.
-2. **FlashWrite
+2. **FlashWrite**
 	```c 
 	HAL_StatusTypeDef FlashWrite(uint32_t Address, uint32_t Data);
   ```
