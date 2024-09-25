@@ -90,7 +90,7 @@
 - **Returns**
         *HAL_OK* on success, or an error code.
 2. **FlashWrite**
-	```c 
+  ```c 
 	HAL_StatusTypeDef FlashWrite(uint32_t Address, uint32_t Data);
   ```
     Writes a 64-bit double word to the specified flash memory address.
