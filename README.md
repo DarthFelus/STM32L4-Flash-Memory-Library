@@ -93,6 +93,7 @@
   ```c 
 	HAL_StatusTypeDef FlashWrite(uint32_t Address, uint32_t Data);
   ```
+  
     Writes a 64-bit double word to the specified flash memory address.
 	
 - **Parameters**
@@ -102,9 +103,9 @@
 	*HAL_OK* on success, or an error code.
 		
 3. **FlashRead**
-	```c 
+  ```c 
 	uint64_t FlashRead(uint32_t Address);
-    ```	
+  ```	
     Reads a 64-bit double word from the specified flash memory address.
 	
 - **Parameters**
