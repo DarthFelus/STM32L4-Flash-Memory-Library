@@ -42,7 +42,7 @@
    
    ## Usage
    
-   1. Erase a Flash Page:
+   1. **Erase a Flash Page:**
    ```c 
    uint32_t pageAddress = ADDR_FLASH_PAGE_63; // Replace with your target page address
 
@@ -54,7 +54,7 @@
      // Handle error
    }
    ```
-   2. Write Data to Flash:
+   2. **Write Data to Flash:**
    ```c 
 	uint32_t flashAddress = 0x0801F800; // Replace with your target flash address
 	uint64_t data = 0x12345678ABCDEF00; // Data to write (64-bit)
@@ -68,7 +68,7 @@
 	}
    ```
    
-   3. Read Data from Flash
+   3. **Read Data from Flash**
    ```c 
 	uint32_t flashAddress = 0x0801F800; // Replace with your target flash address
 
@@ -101,7 +101,7 @@
 -**Returns**
 	*HAL_OK* on success, or an error code.
 		
-3. **FlashRead
+3. **FlashRead**
 	```c 
 	uint64_t FlashRead(uint32_t Address);
     ```	
